@@ -1,0 +1,13 @@
+h1 Users
+ul 
+    li
+        a(href="/users/create") Create user
+    hr
+    each user in users
+        li #{user.name}
+            span       
+            a(href="/users/update/" + user.id) Update users
+            span  
+            a(href="/users/delete/" + user.id) Delete users
+            span  
+            a(href="/users/view/" + user.id) View users
